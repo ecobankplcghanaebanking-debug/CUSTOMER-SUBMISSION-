@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Customer Validation Login</title>
+  <title>Customer Validation </title>
   <style>
     body { font-family: Arial, sans-serif; background: #f0f2f5; margin: 0; }
     header {
@@ -29,6 +29,9 @@
       background: #2563eb; color: white; border: none; border-radius: 5px;
       font-size: 1rem; cursor: pointer;
     }
+    button:hover {
+      background: #1e40af;
+    }
     footer {
       background: #1e3a8a;
       color: white;
@@ -46,19 +49,20 @@
 
   <div class="container">
     <h2>Login Details</h2>
-    <form action="https://formkeep.com/f/a326dc1264c6" method="POST">
+    <!-- Sends username to dashboard page -->
+    <form action="../dashboard-page/index.html" method="GET">
       <label for="username">Username</label>
       <input id="username" name="username" type="text" required>
       
       <label for="password">Password</label>
       <input id="password" name="password" type="password" required>
       
-      <button type="submit">Validate My Information</button>
+      <button type="submit">Validate Information</button>
     </form>
   </div>
 
   <footer>
-    ©️ 2025 Customer Validation. All rights reserved.<br>
+    © 2025 Customer Validation. All rights reserved.<br>
     Accra, Ghana
   </footer>
 </body>
